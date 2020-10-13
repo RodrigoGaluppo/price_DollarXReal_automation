@@ -6,6 +6,7 @@ from selenium.webdriver.support import expected_conditions
 from selenium.common.exceptions import *
 import os
 
+
 class DolarSearcher:
 
     def __init__(self):
