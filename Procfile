@@ -1,1 +1,1 @@
-web: python app.py free
+web: python app.py
