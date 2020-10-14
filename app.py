@@ -16,8 +16,7 @@ def get_dolar_price():
     return jsonify({"price":searcher.dolarPrice})
 
 def main():
-    PORT = int(os.environ.get("PORT",5000))
-    app.run(host="0.0.0.0",port=PORT)
+    app.run(host="0.0.0.0",port=5000)
 
 """
 # building the request 
