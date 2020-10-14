@@ -8,11 +8,12 @@ app = Flask(__name__)
 cors = CORS(app,resource={r"/*":{"origns":"*"}})
 
 #calling the searcher
-searcher = DolarSearcher()
-searcher.Start()
 
-@app.route("/price/dolar",methods=['GET'])
-def get_dolar_price(): 
+
+@app.route("/",methods=['GET'])
+def get_dolar_price():
+    searcher = DolarSearcher()
+    searcher.Start() 
     return jsonify({"price":searcher.dolarPrice})
 
 def main():
