@@ -17,7 +17,7 @@ def get_dolar_price():
     return jsonify({"price":searcher.dolarPrice})
 
 def main():
-    app.run(host="0.0.0.0",port=5000)
+    app.run(host="https://dollar-real-automation.herokuapp.com/"port=5000)
 
 """
 # building the request 
